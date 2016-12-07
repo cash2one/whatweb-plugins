@@ -15,7 +15,6 @@ matches [
 # This searches for a regular expression. Note that the slashes are escaped.
 { :regexp => /<meta name="Author" content="Zabbix SIA" \/>/ },
 
-# This extracts the version of Generic CMS from the Mega generator tag.
 { :version => /src="jsLoader\.php\?ver=(.*?)&/ }, 
 
 ] 

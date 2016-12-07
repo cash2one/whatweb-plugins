@@ -15,7 +15,6 @@ matches [
 # This searches for a regular expression. Note that the slashes are escaped.
 { :regexp => /<title>phpMiniAdmin<\/title>/ },
 
-# This extracts the version of Generic CMS from the Mega generator tag.
 { :version => /target="_blank"><b>(.*?)<\/b><\/a>/ }, 
 
 ] 

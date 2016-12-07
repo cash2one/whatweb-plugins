@@ -5,18 +5,16 @@ website "http://www.cacti.net/"
 
 # This is the matches array. 
 # Each match is treated independently.
+# Dorks #
+dorks [
+'intitle:"ACollab : Accessible Collaboration Environment:"'
+]
 
 # Matches #
 matches [
 
 # This searches for a text string.
 { :text => 'Cacti' },
-
-# This searches for a regular expression. Note that the slashes are escaped.
-{ :regexp => /<div class="productName">/ },
-
-# This extracts the version of Generic CMS from the Mega generator tag.
-{ :version => /<div class="productName">Cacti (.*?)<\/div>/,:search => "headers[server]"  }, 
 
 ] 
 
