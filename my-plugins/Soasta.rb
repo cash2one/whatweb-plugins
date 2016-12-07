@@ -1,0 +1,23 @@
+Plugin.define "soasta" do
+author "orange"
+description "CloudTest makes it easy to test to any level of expected usage – and beyond. "
+website "https://www.soasta.com"
+
+# This is the matches array. 
+# Each match is treated independently.
+
+# Matches #
+matches [
+
+# This searches for a text string.
+{ :text => 'SOASTA' },
+
+# This searches for a regular expression. Note that the slashes are escaped.
+{ :regexp =>/loginButton.png?version">/ },
+
+# This extracts the version of Generic CMS from the Mega generator tag.
+{ :version => /<meta name="buildnumber" content="(.*?)">/ }, 
+
+] 
+
+end
